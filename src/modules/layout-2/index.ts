@@ -1,1 +1,1 @@
-export {default as Layout} from "./screen"
+export { default as Layout } from "./screen"

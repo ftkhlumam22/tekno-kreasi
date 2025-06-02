@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Tekno Kreasi - Technology Solutions for Your Business",
+    "description": "We provide technology solutions to help scale up your business through web development, mobile apps, digital marketing, and talent management."
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact Us"
+  },
+  "jumbotron": {
+    "title": {
+      "part1": "We",
+      "part2": "Are Here",
+      "part3": "To Provide",
+      "part4": "Scale-Up",
+      "part5": "Solutions for Your",
+      "part6": "Business"
+    },
+    "description": "By prioritizing the use of information technology, we are committed to providing beneficial solutions for your business.",
+    "button": "Contact Us"
+  },
+  "about": {
+    "subtitle": "Who We Really Are",
+    "title": {
+      "part1": "Best Services",
+      "part2": "for",
+      "part3": "Better",
+      "part4": "Business"
+    },
+    "paragraph1": "Being the best among others is an aspiration that everyone always has, including business owners. Businesses that have been built must continue to develop in a better direction.",
+    "paragraph2": "We are committed to accompanying your business development with our services to create the right solutions for your business.",
+    "services": {
+      "branding": "Product Branding",
+      "website": "Website Design",
+      "app": "Custom Applications"
+    }
+  },
+  "process": {
+    "subtitle": "The Process We Do",
+    "title": {
+      "part1": "Right Process",
+      "part2": "Produces",
+      "part3": "Accurate",
+      "part4": "Targets"
+    },
+    "cards": [
+      {
+        "title": ["Problem", "Discussion"],
+        "desc": "Understanding partner's desires, offering solutions, achieving goals."
+      },
+      {
+        "title": ["Solution", "Ideation"],
+        "desc": "Breaking down objectives, designing innovations for production stage."
+      },
+      {
+        "title": ["Execution", "Production"],
+        "desc": "Submitting draft designs, revising minor or major elements."
+      }
+    ]
+  },
+  "services": {
+    "subtitle": "Services We Offer",
+    "title": {
+      "part1": "Service",
+      "part2": "Options",
+      "part3": "for",
+      "part4": "Established",
+      "part5": "Businesses"
+    },
+    "items": [
+      {
+        "title": "Tekno Solution",
+        "desc": "Technology is one solution to develop business, reach wider audiences and manage business more efficiently. Development of digital platforms such as software, websites and applications can support business needs.",
+        "list": [
+          "Application development and enhancement",
+          "Website creation and development",
+          "Technology consulting"
+        ]
+      },
+      {
+        "title": "Tekno Digital Marketing",
+        "desc": "Digital marketing allows you to build closer relationships with your customers through social media, email marketing, and engaging content. This can increase customer loyalty and help you maintain your market share.",
+        "list": [
+          "Company and product logo creation",
+          "Product branding design",
+          "Social media content management"
+        ]
+      },
+      {
+        "title": "Tekno Academy",
+        "desc": "It is a training program for potential talents out there, facilitated by experienced mentors in their fields. We believe that everyone has the right to grow and develop, more specifically to have the skills needed in the industry today.",
+        "list": [
+          "Web developer training",
+          "Graphic design training",
+          "Digital marketing training"
+        ]
+      },
+      {
+        "title": "Tekno Talent",
+        "desc": "A service suitable for those who need talents in fields that you need in your business. We offer skilled talents in their fields and make it easier for you to recruit teams for your business."
+      }
+    ]
+  },
+  "portfolio": {
+    "subtitle": "Real Evidence of Our Performance",
+    "title": {
+      "part1": "Our Collaboration",
+      "part2": "Results",
+      "part3": "With",
+      "part4": "Several Partners"
+    }
+  },
+  "cta": {
+    "title": {
+      "part1": "Ready to",
+      "part2": "Grow",
+      "part3": "and",
+      "part4": "Develop With",
+      "part5": "Us?"
+    },
+    "button": "Let's Discuss!"
+  },
+  "footer": {
+    "address": "Jl. Taman Evakuasi Indah No.14, Sunyaragi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45132, Indonesia",
+    "office": "Office",
+    "email": "Email",
+    "information": "Information",
+    "links": {
+      "faq": "FAQ",
+      "contact": "Contact Us",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy"
+    }
+  }
+}

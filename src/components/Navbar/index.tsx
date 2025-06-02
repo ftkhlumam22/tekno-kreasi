@@ -5,16 +5,24 @@ import { LogoTekno } from "@config/Images";
 import cx from "classnames";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 type NavbarIndex = [number, number, boolean];
 
 const Navbar = () => {
+  const { t } = useLanguage();
+
   const menuNavbar: Array<{ name: string; link: string }> = [
-    { name: "Beranda", link: "/" },
-    { name: "Layanan", link: "/#services" },
-    { name: "Portofolio", link: "/#portfolio" },
-    { name: "Kontak Kami", link: "https://api.whatsapp.com/send/?phone=%2B6289505124994&text=Halo+permisi+saya+ingin+tanya" },
+    { name: t.navbar.home, link: "/" },
+    { name: t.navbar.services, link: "/#services" },
+    { name: t.navbar.portfolio, link: "/#portfolio" },
+    {
+      name: t.navbar.contact,
+      link: "https://api.whatsapp.com/send/?phone=%2B6289505124994&text=Halo+permisi+saya+ingin+tanya",
+    },
   ];
+
   const [blur, setBlur] = useState<boolean>(false);
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState<boolean>(false);
 
@@ -27,99 +35,114 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", handleBlur);
+
+    return () => {
+      window.removeEventListener("scroll", handleBlur);
+    };
   }, []);
 
   const mobileSideMenu = (
-    <div
+    <nav
       className={cx(
         openHamburgerMenu ? "left-0" : "-left-full",
         "fixed top-0 bottom-0 w-2/5 bg-white text-black shadow-lg z-[99] transition-all flex justify-center items-start py-20"
       )}
+      aria-label="Mobile Navigation"
     >
       <div className="flex flex-col gap-y-6 items-center">
         {menuNavbar?.map((item, idx) => {
           return (
-            <>
-              <Link
-                key={idx}
-                href={item.link}
-                className={cx(
-                  item.name.includes("Kontak") &&
-                    "px-4 py-[0.35rem] rounded-lg bg-[#ED893E] text-white",
-                  "text-black text-sm"
-                )}
-              >
-                {item.name}
-              </Link>
-            </>
+            <Link
+              key={idx}
+              href={item.link}
+              className={cx(
+                item.name === t.navbar.contact &&
+                  "px-4 py-[0.35rem] rounded-lg bg-[#ED893E] text-white",
+                "text-black"
+              )}
+            >
+              {item.name}
+            </Link>
           );
         })}
+        <LanguageSwitcher />
       </div>
-    </div>
+    </nav>
   );
 
   return (
-    <>
+    <header
+      className={cx(
+        "w-full fixed z-[999]",
+        blur ? "backdrop-blur-xl shadow-md bg-white/50" : ""
+      )}
+    >
       {mobileSideMenu}
-      <nav
+
+      <div
         className={cx(
-          blur ? "backdrop-blur-md" : "backdrop-blur-sm",
-          " bg-white py-3 bg-opacity-80 text-gray-800 fixed left-0 right-0 top-0 z-50"
+          "w-full mx-auto flex items-center justify-between md:py-4 py-3 md:px-12 px-8"
         )}
       >
-        <div className="items-center justify-around md:gap-x-16 gap-10 h-16 flex">
-          <div className="flex items-center">
-            <Link href="#" className="flex ">
-              <Image
-                src={LogoTekno}
-                alt=""
-                // height={40}
-                width={100}
-                className="object-cover"
-              />
-            </Link>
-          </div>
-          <div className="hidden md:block">
+        <div className="self-center">
+          <Link href="/">
+            <Image
+              src={LogoTekno}
+              className="md:h-12 h-7 w-auto"
+              alt="Tekno Kreasi Logo"
+              priority
+            />
+          </Link>
+        </div>
+
+        <div className="flex items-center">
+          {/* desktop view */}
+          <div className="md:block hidden">
             <div className="flex items-baseline justify-around w-80 text-xs">
               {menuNavbar?.map((item, idx) => {
                 return (
-                  <>
-                    <Link
-                      key={idx}
-                      href={item.link}
-                      className={cx(
-                        item.name.includes("Kontak") &&
-                          "px-4 py-[0.35rem] rounded-lg bg-[#ED893E] text-white",
-                        "text-black"
-                      )}
-                    >
-                      {item.name}
-                    </Link>
-                  </>
+                  <Link
+                    key={idx}
+                    href={item.link}
+                    className={cx(
+                      item.name === t.navbar.contact &&
+                        "px-4 py-[0.35rem] rounded-lg bg-[#ED893E] text-white",
+                      "text-black"
+                    )}
+                  >
+                    {item.name}
+                  </Link>
                 );
               })}
             </div>
           </div>
+
+          {/* Desktop language switcher */}
+          <div className="md:block hidden">
+            <LanguageSwitcher />
+          </div>
+
           {/* mobile view */}
           <div className="md:hidden block">
             {!openHamburgerMenu ? (
-              <GiHamburgerMenu
-                className="text-black"
-                size={30}
+              <button
+                aria-label="Open menu"
                 onClick={() => setOpenHamburgerMenu(true)}
-              />
+              >
+                <GiHamburgerMenu className="text-black" size={30} />
+              </button>
             ) : (
-              <FaTimes
-                className="text-black"
-                size={30}
+              <button
+                aria-label="Close menu"
                 onClick={() => setOpenHamburgerMenu(false)}
-              />
+              >
+                <FaTimes className="text-black" size={30} />
+              </button>
             )}
           </div>
-          {/* End Mobile */}
         </div>
-      </nav>
-    </>
+      </div>
+    </header>
   );
 };
 

@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Tekno Kreasi - Solusi Teknologi untuk Bisnis Anda",
+    "description": "Kami menyediakan solusi teknologi untuk membantu scale up bisnis Anda melalui pengembangan web, aplikasi mobile, pemasaran digital, dan manajemen talenta."
+  },
+  "navbar": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "contact": "Kontak Kami"
+  },
+  "jumbotron": {
+    "title": {
+      "part1": "Kami",
+      "part2": "Hadir",
+      "part3": "Menjadi Solusi",
+      "part4": "Scale-Up",
+      "part5": "Bisnis",
+      "part6": "Anda"
+    },
+    "description": "Dengan mengedepankan pemanfaatan teknologi informasi, kami berkomitmen untuk dapat memberikan solusi yang bermanfaat bagi bisnis anda.",
+    "button": "Kontak Kami"
+  },
+  "about": {
+    "subtitle": "Siapa Sebenarnya Kami",
+    "title": {
+      "part1": "Layanan Terbaik",
+      "part2": "untuk",
+      "part3": "Bisnis",
+      "part4": "yang Lebih Baik"
+    },
+    "paragraph1": "Menjadi yang terbaik diantara yang lain adalah cita-cita yang selalu dimiliki setiap orang, begitu juga dengan pemilik usaha. Bisnis yang telah dibangun harus terus berkembang ke arah yang lebih baik.",
+    "paragraph2": "Kami berkomitmen membersamai pengembangan bisnis anda dengan layanan yang kami miliki untuk mewujudkan solusi tepat untuk bisnis anda.",
+    "services": {
+      "branding": "Branding Produk",
+      "website": "Rancang Website",
+      "app": "Custom Aplikasi"
+    }
+  },
+  "process": {
+    "subtitle": "Proses yang Kami Lakukan",
+    "title": {
+      "part1": "Proses Tepat",
+      "part2": "Hasilkan",
+      "part3": "Target",
+      "part4": "yang Akurat"
+    },
+    "cards": [
+      {
+        "title": ["Diskusi", "Masalah"],
+        "desc": "Memahami keinginan mitra, menawarkan solusi, mewujudkan tujuan."
+      },
+      {
+        "title": ["Olah Ide", "Solusi"],
+        "desc": "Menjabarkan tujuan, merancang inovasi untuk tahap produksi."
+      },
+      {
+        "title": ["Eksekusi", "Produksi"],
+        "desc": "Menyerahkan draft rancangan, merevisi minor atau mayor."
+      }
+    ]
+  },
+  "services": {
+    "subtitle": "Layanan yang Kami Tawarkan",
+    "title": {
+      "part1": "Pilihan",
+      "part2": "Layanan",
+      "part3": "untuk",
+      "part4": "Bisnis",
+      "part5": "yang Mapan"
+    },
+    "items": [
+      {
+        "title": "Tekno Solution",
+        "desc": "Teknologi menjadi salah satu solusi untuk mengembangkan bisnis, menjangkau audiens lebih luas dan mengelola bisnis dengan lebih efisien. Pengembangan platform digital seperti software, website dan aplikasi dapat menunjang kebutuhan bisnis.",
+        "list": [
+          "Pembuatan dan pengembangan aplikasi",
+          "Pembuatan dan pengembangan website",
+          "Konsultasi teknologi"
+        ]
+      },
+      {
+        "title": "Tekno Digital Marketing",
+        "desc": "Digital marketing memungkinkan Anda untuk membangun hubungan yang lebih erat dengan pelanggan Anda melalui media sosial, email marketing, dan konten yang menarik. Ini dapat meningkatkan loyalitas pelanggan dan membantu Anda mempertahankan pangsa pasar Anda.",
+        "list": [
+          "Pembuatan logo produk dan perusahaan",
+          "Perancangan branding produk",
+          "Pengelolaan konten media sosial"
+        ]
+      },
+      {
+        "title": "Tekno Academy",
+        "desc": "Adalah sebuah program pelatihan kepada calon-calon talenta di luar sana, difasilitasi oleh mentor-mentor yang berpengalaman di bidangnya. Kami percaya bahwa setiap orang memiliki hak untuk tumbuh dan berkembang, lebih khusus lagi memiliki keterampilan yang dibutuhkan di industri pada saat ini.",
+        "list": [
+          "Pelatihan web developer",
+          "Pelatihan desain grafis",
+          "Pelatihan digital marketing"
+        ]
+      },
+      {
+        "title": "Tekno Talent",
+        "desc": "Layanan yang cocok bagi anda yang membutuhkan talenta-talenta di bidang yang anda butuhkan dalam bisnis anda. Kami menawarkan talenta yang terampil dalam bidangnya dan memudahkan anda dalam merekrut tim untuk bisnis anda."
+      }
+    ]
+  },
+  "portfolio": {
+    "subtitle": "Bukti Nyata Kinerja Kami",
+    "title": {
+      "part1": "Hasil Kolaborasi",
+      "part2": "Kami",
+      "part3": "Dengan",
+      "part4": "Beberapa Mitra"
+    }
+  },
+  "cta": {
+    "title": {
+      "part1": "Sudah Siap Untuk",
+      "part2": "Tumbuh",
+      "part3": "dan",
+      "part4": "Berkembang Bersama",
+      "part5": "Kami?"
+    },
+    "button": "Mari Kita Bicarakan!"
+  },
+  "footer": {
+    "address": "Jl. Taman Evakuasi Indah No.14, Sunyaragi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45132, Indonesia",
+    "office": "Office",
+    "email": "Email",
+    "information": "Informasi",
+    "links": {
+      "faq": "FAQ",
+      "contact": "Hubungi Kami",
+      "terms": "Syarat & Ketentuan",
+      "privacy": "Kebijakan Privasi"
+    }
+  }
+}
