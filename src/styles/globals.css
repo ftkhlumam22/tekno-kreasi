@@ -11,28 +11,68 @@ body {
   background-color: #ffff;
 }
 
+/* Smooth transitions */
+.animate-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for better UX */
 ::-webkit-scrollbar {
   width: 13px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #dad8d8;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #e38421;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
 }
 
-.scrollbar::-webkit-scrollbar {
-  width: 0;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d17531;
 }
 
-.scrollbar::-webkit-scrollbar-track {
-  display: none;
+/* Improved button styles */
+button {
+  transition: all 0.3s ease;
 }
 
-.scrollbar::-webkit-scrollbar-thumb {
-  background-color: transparent;
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Improved image hover effects */
+.img-hover {
+  transition: transform 0.5s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Parallax container */
+.parallax-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .bg-cta {
@@ -58,14 +98,103 @@ body {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
   }
+
+  /* Perbaikan untuk text color */
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6,
-  p {
-    color: white;
+  h6 {
+    color: black; /* Ubah agar tidak semua text berwarna putih */
     font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    color: #595959; /* Ubah default color untuk paragraf */
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Kecualian untuk text dalam section berwarna putih */
+  .bg-dark h1,
+  .bg-dark h2,
+  .bg-dark h3,
+  .bg-dark h4,
+  .bg-dark h5,
+  .bg-dark h6,
+  .bg-dark p,
+  .bg-primary h1,
+  .bg-primary h2,
+  .bg-primary h3,
+  .bg-primary h4,
+  .bg-primary h5,
+  .bg-primary h6,
+  .bg-primary p {
+    color: white;
+  }
+}
+
+/* Tambahkan atau perbarui style berikut */
+
+/* Perbaikan untuk navbar */
+header.navbar-container {
+  z-index: 999;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Tombol hamburger yang lebih minimalis */
+.hamburger-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  padding: 0;
+  background-color: transparent;
+}
+
+.hamburger-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Tambahkan padding atas untuk konten utama */
+main {
+  padding-top: 68px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Tambahkan animasi untuk link navigasi */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ed893e;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Perbaikan untuk tampilan mobile */
+@media (max-width: 768px) {
+  .mobile-menu-container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }

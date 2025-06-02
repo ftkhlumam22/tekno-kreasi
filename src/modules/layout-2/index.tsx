@@ -11,6 +11,7 @@ import {
 } from "./components";
 import Head from "next/head";
 import { useLanguage } from "../../context/LanguageContext";
+import { Container } from "../../components";
 
 const Layout = () => {
   const { t, language } = useLanguage();
@@ -44,13 +45,17 @@ const Layout = () => {
         />
       </Head>
       <Navbar />
-      <main>
-        <Jumbotron />
-        <SectionAbout />
-        <SectionProses />
-        <SectionSkillupType />
-        <SectionCollab />
-        <SectionCallToAction />
+      <main className="pt-16">
+        <Container fullWidth>
+          <Jumbotron />
+        </Container>
+        <Container>
+          <SectionAbout />
+          <SectionProses />
+          <SectionSkillupType />
+          <SectionCollab />
+          <SectionCallToAction />
+        </Container>
       </main>
       <Footer />
     </>
