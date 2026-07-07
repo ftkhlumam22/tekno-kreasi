@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { whatsappUrl } from "@/data/site";
 
 const Jumbotron = () => {
   const { t } = useLanguage();
@@ -75,7 +76,7 @@ const Jumbotron = () => {
             transition={{ duration: 0.7, delay: 0.9 }}
           >
             <Link
-              href="https://api.whatsapp.com/send/?phone=%2B6289505124994&text=Halo+permisi+saya+ingin+tanya"
+              href={whatsappUrl}
               target="_blank"
             >
               <motion.button

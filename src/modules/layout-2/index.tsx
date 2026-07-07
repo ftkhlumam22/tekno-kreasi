@@ -22,17 +22,16 @@ const Layout = () => {
     "@type": "Organization",
     name: "Tekno Kreasi",
     url: "https://teknokreasi.com",
-    logo: "https://teknokreasi.com/tekno-kreasi-logo.svg",
+    logo: "https://teknokreasi.com/new-logo.jpeg",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+62-818-240-707",
+      telephone: "+62-851-5721-5288",
       contactType: "customer service",
       availableLanguage: ["Indonesian", "English"],
     },
     sameAs: [
-      "https://www.facebook.com/teknokreasi",
-      "https://www.instagram.com/teknokreasi",
-      "https://www.linkedin.com/company/teknokreasi",
+      "https://www.facebook.com/teknokreasidigital/",
+      "https://www.instagram.com/teknokreasi.digital/",
     ],
   };
 

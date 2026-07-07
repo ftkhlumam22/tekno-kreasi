@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion, useInView } from "framer-motion";
+import { whatsappUrl } from "@/data/site";
 
 const SectionCallToAction = () => {
   const { t } = useLanguage();
@@ -44,7 +45,7 @@ const SectionCallToAction = () => {
           whileTap={{ scale: 0.95 }}
         >
           <Link
-            href="https://api.whatsapp.com/send/?phone=%2B6289505124994&text=Halo+permisi+saya+ingin+tanya"
+            href={whatsappUrl}
             target="_blank"
             className="inline-block"
           >

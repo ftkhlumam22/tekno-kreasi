@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import cx from "classnames";
-import Navbar from "../Navbar";
 
 interface ContainerProps {
   children: ReactNode;
@@ -25,7 +24,6 @@ const Container: React.FC<ContainerProps> = ({
         className
       )}
     >
-      <Navbar />
       {children}
     </div>
   );
