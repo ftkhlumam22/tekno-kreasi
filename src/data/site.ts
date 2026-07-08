@@ -1,7 +1,7 @@
 export const siteUrl = "https://teknokreasi.com";
 
 export const whatsappUrl =
-  "https://api.whatsapp.com/send/?phone=%2B6285157215288&text=Halo%20Tekno%20Kreasi%2C%20saya%20ingin%20konsultasi%20website%20atau%20digitalisasi%20bisnis";
+  "https://api.whatsapp.com/send/?phone=6285157215288&text=Halo%20Tekno%20Kreasi%2C%20saya%20ingin%20konsultasi%20website%20atau%20digitalisasi%20bisnis";
 
 export const whatsappDisplay = "+62 851-5721-5288";
 
