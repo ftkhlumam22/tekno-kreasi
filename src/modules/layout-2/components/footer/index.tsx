@@ -8,6 +8,7 @@ const pages = [
   { label: "Layanan", href: "/layanan" },
   { label: "Harga", href: "/harga" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
   { label: "Tentang", href: "/tentang" },
   { label: "Kontak", href: "/kontak" },
 ];

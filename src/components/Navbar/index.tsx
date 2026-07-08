@@ -13,6 +13,7 @@ const menuNavbar = [
   { name: "Layanan", link: "/layanan" },
   { name: "Harga", link: "/harga" },
   { name: "Portfolio", link: "/portfolio" },
+  { name: "Blog", link: "/blog" },
   { name: "Tentang", link: "/tentang" },
 ];
 

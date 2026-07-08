@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { AuthProvider } from "@/contexts/AuthContext";
 import { Poppins } from "next/font/google";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
@@ -14,7 +15,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     const setVH = () => {
       const vh = window.innerHeight * 0.01;
@@ -26,6 +27,18 @@ export default function App({ Component, pageProps }: AppProps) {
     window.addEventListener("resize", setVH);
     return () => window.removeEventListener("resize", setVH);
   }, []);
+
+  const isAdminRoute = router.pathname.startsWith("/admin");
+
+  if (isAdminRoute) {
+    return (
+      <div className={poppins.className}>
+        <AuthProvider>
+          <Component {...pageProps} />
+        </AuthProvider>
+      </div>
+    );
+  }
 
   return (
     <div className={poppins.className}>
