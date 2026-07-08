@@ -2,7 +2,11 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Poppins } from "next/font/google";
+import dynamic from "next/dynamic";
 import { useEffect } from "react";
+
+const LeadMagnet = dynamic(() => import("@/components/LeadMagnet"), { ssr: false });
+const SocialProofToast = dynamic(() => import("@/components/SocialProofToast"), { ssr: false });
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +31,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={poppins.className}>
       <LanguageProvider>
         <Component {...pageProps} />
+        <LeadMagnet />
+        <SocialProofToast />
       </LanguageProvider>
     </div>
   );

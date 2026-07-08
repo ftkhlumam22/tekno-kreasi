@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Seo, SiteLayout } from "@components";
+import { Seo, SiteLayout, ContactForm } from "@components";
 import { whatsappDisplay, whatsappUrl } from "@/data/site";
 import { PageHero, SectionHeading } from "@/modules/umkm-site/components";
 
@@ -15,21 +15,21 @@ export default function KontakPage() {
         <PageHero
           eyebrow="Kontak"
           title="Ceritakan bisnis Anda, kami bantu pilih langkah digital yang tepat."
-          description="Konsultasi awal bisa lewat WhatsApp. Siapkan jenis bisnis, target pelanggan, contoh referensi, dan perkiraan budget agar rekomendasi lebih akurat."
+          description="Konsultasi awal bisa lewat WhatsApp atau form di bawah. Siapkan jenis bisnis, target pelanggan, contoh referensi, dan perkiraan budget agar rekomendasi lebih akurat."
           primaryLabel="Chat WhatsApp"
           secondaryLabel="Lihat Harga"
           secondaryHref="/harga"
         />
         <section className="px-5 py-16 md:px-10">
-          <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
-            <SectionHeading
-              eyebrow="Informasi kontak"
-              title="Mulai dari obrolan singkat, lanjut ke estimasi kebutuhan, waktu, dan biaya."
-            />
-            <div className="grid gap-5">
+          <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_1fr]">
+            <div className="space-y-5">
+              <SectionHeading
+                eyebrow="Informasi kontak"
+                title="Pilih cara yang paling nyaman untuk Anda."
+              />
               <div className="rounded-3xl bg-white p-7 shadow-sm ring-2 ring-orange-100">
                 <h2 className="text-2xl font-black text-[#0F172A]">WhatsApp</h2>
-                <p className="mt-3 font-semibold text-[#0F172A]">Respons paling cepat untuk konsultasi kebutuhan website dan digitalisasi UMKM.</p>
+                <p className="mt-3 font-semibold text-[#0F172033]">Respons paling cepat untuk konsultasi kebutuhan website dan digitalisasi UMKM.</p>
                 <p className="mt-2 text-lg font-black text-[#0F172A]">{whatsappDisplay}</p>
                 <Link
                   href={whatsappUrl}
@@ -60,6 +60,7 @@ export default function KontakPage() {
                 </ul>
               </div>
             </div>
+            <ContactForm />
           </div>
         </section>
       </SiteLayout>

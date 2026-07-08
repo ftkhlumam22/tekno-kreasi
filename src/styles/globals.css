@@ -60,18 +60,6 @@ body {
 }
 
 /* Improved button styles */
-button {
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-button:active {
-  transform: translateY(1px);
-}
 
 /* Improved image hover effects */
 .img-hover {
@@ -98,20 +86,6 @@ button:active {
 }
 
 @layer base {
-  button {
-    background-color: #ed893e;
-    width: 14.5rem;
-    height: 2.2rem;
-    color: white;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 13px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-  }
-
   h1,
   h2,
   h3,

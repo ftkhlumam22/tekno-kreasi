@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Seo, SiteLayout } from "@components";
+import { Seo, SiteLayout, ProjectEstimator } from "@components";
 import { faqs, packages, whatsappUrl } from "@/data/site";
 import { CtaBand, PageHero, SectionHeading } from "@/modules/umkm-site/components";
 
@@ -87,6 +87,7 @@ export default function HargaPage() {
             </div>
           </div>
         </section>
+        <ProjectEstimator />
         <CtaBand />
       </SiteLayout>
     </>
