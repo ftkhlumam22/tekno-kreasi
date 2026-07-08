@@ -108,7 +108,14 @@ const Footer = () => {
 
         <div className="mt-8 flex flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-white/70">(c) {new Date().getFullYear()} Tekno Kreasi. All rights reserved.</p>
-          <p className="text-sm text-white/70">Website, aplikasi, dan digital product untuk bisnis Indonesia.</p>
+          <div className="flex flex-wrap gap-4 text-sm text-white/70">
+            <Link href="/privasi" className="transition hover:text-[#FFB36B] hover:no-underline">
+              Kebijakan Privasi
+            </Link>
+            <Link href="/syarat-ketentuan" className="transition hover:text-[#FFB36B] hover:no-underline">
+              Syarat & Ketentuan
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
