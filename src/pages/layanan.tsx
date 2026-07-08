@@ -32,7 +32,7 @@ export default function LayananPage() {
                 <article key={service.slug} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-orange-100">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div>
-                      <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#ED893E]">
+                      <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#B45309]">
                         {service.price}
                       </p>
                       <h2 className="mt-3 text-3xl font-bold text-[#172033]">{service.title}</h2>
@@ -59,7 +59,7 @@ export default function LayananPage() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+                className="mt-6 inline-flex rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
               >
                 Konsultasi Layanan
               </Link>

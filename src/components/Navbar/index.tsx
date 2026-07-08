@@ -69,7 +69,7 @@ const Navbar = () => {
           </span>
           <span className="hidden leading-tight sm:block">
             <span className="block text-sm font-black tracking-tight text-[#172033]">Tekno Kreasi</span>
-            <span className="block text-xs font-semibold text-[#ED893E]">Digital Product Studio</span>
+            <span className="block text-xs font-semibold text-[#B45309]">Digital Product Studio</span>
           </span>
         </Link>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#ED893E] px-5 py-3 text-sm font-black text-white shadow-lg shadow-orange-200 transition hover:-translate-y-0.5 hover:bg-[#d17531] hover:text-white hover:no-underline"
+            className="rounded-full bg-[#ED893E] px-5 py-3 text-sm font-black text-[#172033] shadow-lg shadow-orange-200 transition hover:-translate-y-0.5 hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
           >
             Konsultasi Gratis
           </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
                   </span>
                   <span>
                     <span className="block text-base font-black text-[#172033]">Tekno Kreasi</span>
-                    <span className="block text-xs font-bold text-[#ED893E]">Digital Product Studio</span>
+                    <span className="block text-xs font-bold text-[#B45309]">Digital Product Studio</span>
                   </span>
                 </Link>
                 <button
@@ -192,7 +192,7 @@ const Navbar = () => {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 flex justify-center rounded-2xl bg-[#ED893E] px-5 py-4 text-sm font-black text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+                  className="mt-4 flex justify-center rounded-2xl bg-[#ED893E] px-5 py-4 text-sm font-black text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
                 >
                   Konsultasi Gratis
                 </Link>

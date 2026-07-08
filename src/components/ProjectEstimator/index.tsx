@@ -111,7 +111,7 @@ const ProjectEstimator = () => {
                       <div
                         className={`flex h-6 w-6 items-center justify-center rounded-full ${
                           selectedPages.includes(page.id)
-                            ? "bg-[#ED893E] text-white"
+                            ? "bg-[#ED893E] text-[#172033]"
                             : "bg-white/10 text-white/40"
                         }`}
                       >
@@ -215,7 +215,7 @@ const ProjectEstimator = () => {
                     key={total}
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
-                    className="text-3xl font-black text-[#ED893E]"
+                    className="text-3xl font-black text-[#B45309]"
                   >
                     {formatPrice(total)}
                   </motion.p>
@@ -231,13 +231,13 @@ const ProjectEstimator = () => {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 flex w-full justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-white transition hover:bg-[#d17531] hover:text-white hover:no-underline"
+                className="mt-6 flex w-full justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-[#172033] transition hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
               >
                 Konsultasi Estimasi Ini
               </Link>
 
               <p className="mt-4 text-center text-xs text-gray-500">
-                atau <Link href="/harga" className="font-bold text-[#ED893E] hover:underline">lihat paket lengkap</Link>
+                atau <Link href="/harga" className="font-bold text-[#B45309] hover:underline">lihat paket lengkap</Link>
               </p>
             </motion.div>
           </div>

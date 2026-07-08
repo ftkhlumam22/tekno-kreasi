@@ -31,11 +31,11 @@ export default function HargaPage() {
               {packages.map((item) => (
                 <article
                   key={item.name}
-                  className={`rounded-3xl p-7 shadow-sm ${item.highlighted ? "bg-[#ED893E] text-white" : "bg-white text-[#172033] ring-1 ring-orange-100"}`}
+                  className={`rounded-3xl p-7 shadow-sm ${item.highlighted ? "bg-[#ED893E] text-[#172033]" : "bg-white text-[#172033] ring-1 ring-orange-100"}`}
                 >
-                  <h2 className={`text-2xl font-bold ${item.highlighted ? "text-white" : "text-[#172033]"}`}>{item.name}</h2>
-                  <p className={`mt-5 text-4xl font-extrabold ${item.highlighted ? "text-white" : "text-[#ED893E]"}`}>{item.price}</p>
-                  <p className={`mt-4 text-sm leading-7 ${item.highlighted ? "text-white/80" : "text-gray-600"}`}>{item.note}</p>
+                  <h2 className={`text-2xl font-bold ${item.highlighted ? "text-[#172033]" : "text-[#172033]"}`}>{item.name}</h2>
+                  <p className={`mt-5 text-4xl font-extrabold ${item.highlighted ? "text-[#172033]" : "text-[#ED893E]"}`}>{item.price}</p>
+                  <p className={`mt-4 text-sm leading-7 ${item.highlighted ? "text-[#172033]/80" : "text-gray-600"}`}>{item.note}</p>
                   <ul className="mt-6 space-y-3 text-sm">
                     {item.items.map((feature) => (
                       <li key={feature}>✓ {feature}</li>

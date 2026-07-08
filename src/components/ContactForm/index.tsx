@@ -124,7 +124,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-white transition hover:bg-[#d17531] disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-[#172033] transition hover:bg-[#d17531] hover:text-[#172033] disabled:cursor-not-allowed disabled:opacity-50"
         >
           {status === "loading" ? "Mengirim..." : "Kirim Pesan"}
         </button>

@@ -54,7 +54,7 @@ const HomePage = () => {
                 transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="rounded-[1.5rem] bg-[#fffaf4] p-6"
               >
-                <p className="text-4xl font-black text-[#ED893E]">{stat.value}</p>
+                <p className="text-4xl font-black text-[#B45309]">{stat.value}</p>
                 <p className="mt-2 text-sm font-bold leading-6 text-[#475569]">{stat.label}</p>
               </motion.div>
             ))}
@@ -162,7 +162,7 @@ const HomePage = () => {
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/portfolio"
-                  className="inline-flex justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+                  className="inline-flex justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
                 >
                   Lihat portfolio lain
                 </Link>
@@ -199,14 +199,14 @@ const HomePage = () => {
                 className="flex min-h-full flex-col justify-between rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-orange-100"
               >
                 <div>
-                  <div className="text-sm font-black uppercase tracking-[0.18em] text-[#ED893E]" aria-hidden="true">
+                  <div className="text-sm font-black uppercase tracking-[0.18em] text-[#B45309]" aria-hidden="true">
                     Rating 5/5
                   </div>
                   <p className="mt-5 text-lg leading-8 text-[#475569]">&quot;{testimonial.quote}&quot;</p>
                 </div>
                 <div className="mt-8 border-t border-slate-100 pt-5">
                   <p className="font-black text-[#172033]">{testimonial.name}</p>
-                  <p className="mt-1 text-sm font-semibold text-[#ED893E]">{testimonial.role}</p>
+                  <p className="mt-1 text-sm font-semibold text-[#B45309]">{testimonial.role}</p>
                 </div>
               </motion.article>
             ))}

@@ -35,7 +35,7 @@ export default function KontakPage() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+                  className="mt-5 inline-flex rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
                 >
                   Buka WhatsApp
                 </Link>

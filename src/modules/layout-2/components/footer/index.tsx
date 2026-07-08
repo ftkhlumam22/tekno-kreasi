@@ -40,7 +40,7 @@ const Footer = () => {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[#ED893E] px-5 py-3 text-sm font-black text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ED893E] px-5 py-3 text-sm font-black text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
               >
                 <FaWhatsapp aria-hidden="true" />
                 Chat WhatsApp
@@ -89,7 +89,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Tekno Kreasi"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0F172A] text-white transition hover:bg-[#ED893E] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0F172A] text-white transition hover:bg-[#ED893E] hover:text-[#172033]"
               >
                 <FaInstagram aria-hidden="true" />
               </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Tekno Kreasi"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0F172A] text-white transition hover:bg-[#ED893E] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0F172A] text-white transition hover:bg-[#ED893E] hover:text-[#172033]"
               >
                 <FaFacebookF aria-hidden="true" />
               </Link>
@@ -107,8 +107,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <p>(c) {new Date().getFullYear()} Tekno Kreasi. All rights reserved.</p>
-          <p>Website, aplikasi, dan digital product untuk bisnis Indonesia.</p>
+          <p className="text-sm text-white/70">(c) {new Date().getFullYear()} Tekno Kreasi. All rights reserved.</p>
+          <p className="text-sm text-white/70">Website, aplikasi, dan digital product untuk bisnis Indonesia.</p>
         </div>
       </div>
     </footer>

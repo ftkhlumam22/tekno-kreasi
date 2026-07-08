@@ -248,7 +248,7 @@ const LeadMagnet = () => {
                   />
                   <button
                     type="submit"
-                    className="w-full rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-white transition hover:bg-[#d17531]"
+                    className="w-full rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-black text-[#172033] transition hover:bg-[#d17531] hover:text-[#172033]"
                   >
                     Download Gratis
                   </button>
@@ -305,7 +305,7 @@ const LeadMagnet = () => {
                       href="https://api.whatsapp.com/send/?phone=6285157215288&text=Halo%20Tekno%20Kreasi%2C%20saya%20sudah%20download%20checklist%20dan%20ingin%20konsultasi"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex flex-1 items-center justify-center rounded-xl bg-[#ED893E] px-4 py-3 text-sm font-black text-white transition hover:bg-[#d17531]"
+                      className="flex flex-1 items-center justify-center rounded-xl bg-[#ED893E] px-4 py-3 text-sm font-black text-[#172033] transition hover:bg-[#d17531] hover:text-[#172033]"
                     >
                       Konsultasi
                     </a>

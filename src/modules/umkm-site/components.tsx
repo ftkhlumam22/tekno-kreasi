@@ -30,7 +30,7 @@ export const SectionHeading = ({
   tone = "light",
 }: SectionHeadingProps) => (
   <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#ED893E]">
+    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#B45309]">
       {eyebrow}
     </p>
     <h2 className={`text-3xl font-bold leading-tight md:text-5xl ${tone === "dark" ? "text-white" : "text-[#1f2937]"}`}>
@@ -101,7 +101,7 @@ export const PageHero = ({
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-orange-200 hover:bg-[#d17531] hover:text-white hover:no-underline"
+              className="inline-flex items-center justify-center rounded-xl bg-[#ED893E] px-6 py-4 text-sm font-bold text-[#172033] shadow-lg shadow-orange-200 hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
             >
               {primaryLabel}
             </Link>
@@ -403,17 +403,17 @@ export const InteractivePricing = () => {
               }`}
             >
               {item.highlighted && (
-                <span className="absolute right-5 top-5 rounded-full bg-[#ED893E] px-3 py-1 text-xs font-black text-white">
+                <span className="absolute right-5 top-5 rounded-full bg-[#ED893E] px-3 py-1 text-xs font-black text-[#172033]">
                   Paling populer
                 </span>
               )}
-              <span className={`text-sm font-black uppercase tracking-[0.18em] ${item.highlighted ? "text-[#FFB36B]" : "text-[#ED893E]"}`}>
+              <span className={`text-sm font-black uppercase tracking-[0.18em] ${item.highlighted ? "text-[#FFB36B]" : "text-[#B45309]"}`}>
                 Paket {index + 1}
               </span>
               <h3 className={`mt-4 text-3xl font-black ${item.highlighted ? "text-white" : "text-[#0F172A]"}`}>
                 {item.name}
               </h3>
-              <p className={`mt-4 text-4xl font-black ${item.highlighted ? "text-white" : "text-[#ED893E]"}`}>
+              <p className={`mt-4 text-4xl font-black ${item.highlighted ? "text-[#172033]" : "text-[#B45309]"}`}>
                 {item.price}
               </p>
               <p className={`mt-4 leading-7 ${item.highlighted ? "text-white/75" : "text-[#64748B]"}`}>
@@ -449,7 +449,7 @@ export const InteractivePricing = () => {
                 rel="noopener noreferrer"
                 className={`mt-7 inline-flex justify-center rounded-xl px-6 py-4 text-sm font-black hover:no-underline ${
                   item.highlighted
-                    ? "bg-[#ED893E] text-white hover:bg-[#d17531] hover:text-white"
+                    ? "bg-[#ED893E] text-[#172033] hover:bg-[#d17531] hover:text-[#172033]"
                     : "bg-[#172033] text-white hover:bg-[#0F172A] hover:text-white"
                 }`}
               >
@@ -529,7 +529,7 @@ export const WhatsappConversationCta = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex rounded-xl bg-[#ED893E] px-7 py-4 text-sm font-black text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+            className="mt-8 inline-flex rounded-xl bg-[#ED893E] px-7 py-4 text-sm font-black text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
           >
             Chat Konsultasi
           </Link>
@@ -549,7 +549,7 @@ export const WhatsappConversationCta = () => {
               transition={{ delay: index * 0.14 }}
               className={`mb-3 flex ${type === "visitor" ? "justify-end" : "justify-start"}`}
             >
-              <div className={`max-w-[84%] rounded-2xl px-4 py-3 text-sm font-semibold leading-6 ${type === "visitor" ? "bg-[#ED893E] text-white" : "bg-slate-100 text-[#0F172A]"}`}>
+              <div className={`max-w-[84%] rounded-2xl px-4 py-3 text-sm font-semibold leading-6 ${type === "visitor" ? "bg-[#ED893E] text-[#172033]" : "bg-slate-100 text-[#0F172A]"}`}>
                 {message}
               </div>
             </motion.div>
@@ -565,7 +565,7 @@ export const CtaBand = () => (
     <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#172033] p-8 text-white shadow-2xl md:p-12">
       <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ED893E]">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#B45309]">
             Konsultasi tanpa ribet
           </p>
           <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-5xl">
@@ -580,7 +580,7 @@ export const CtaBand = () => (
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex justify-center rounded-xl bg-[#ED893E] px-7 py-4 text-sm font-bold text-white hover:bg-[#d17531] hover:text-white hover:no-underline"
+          className="inline-flex justify-center rounded-xl bg-[#ED893E] px-7 py-4 text-sm font-bold text-[#172033] hover:bg-[#d17531] hover:text-[#172033] hover:no-underline"
         >
           Chat Sekarang
         </Link>
