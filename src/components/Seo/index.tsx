@@ -1,14 +1,16 @@
 import Head from "next/head";
-import { siteUrl } from "@/data/site";
+import { ogImage, siteUrl } from "@/data/site";
 
 type SeoProps = {
   title: string;
   description: string;
   path?: string;
+  image?: string;
 };
 
-const Seo = ({ title, description, path = "" }: SeoProps) => {
+const Seo = ({ title, description, path = "", image }: SeoProps) => {
   const canonical = `${siteUrl}${path}`;
+  const ogImageUrl = image ? `${siteUrl}${image}` : `${siteUrl}${ogImage}`;
 
   return (
     <Head>
@@ -23,9 +25,13 @@ const Seo = ({ title, description, path = "" }: SeoProps) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImageUrl} />
     </Head>
   );
 };

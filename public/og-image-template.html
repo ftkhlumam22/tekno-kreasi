@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Image Template - Tekno Kreasi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    
+    .og-container {
+      width: 1200px;
+      height: 630px;
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    
+    .og-container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(237, 137, 62, 0.3) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .og-container::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(40, 161, 107, 0.2) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .brand {
+      color: white;
+    }
+    
+    .brand-name {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+    
+    .brand-tagline {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ED893E;
+      margin-top: 4px;
+    }
+    
+    .main-title {
+      font-size: 64px;
+      font-weight: 900;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+    }
+    
+    .highlight {
+      color: #ED893E;
+    }
+    
+    .description {
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+      max-width: 800px;
+    }
+    
+    .footer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 40px;
+      border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .stats {
+      display: flex;
+      gap: 40px;
+    }
+    
+    .stat {
+      text-align: left;
+    }
+    
+    .stat-value {
+      font-size: 36px;
+      font-weight: 900;
+      color: #ED893E;
+    }
+    
+    .stat-label {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 4px;
+    }
+    
+    .website {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 24px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+  <div class="og-container">
+    <div class="content">
+      <div class="logo-section">
+        <div class="logo"><img src="new-logo.jpeg" alt="Tekno Kreasi"></div>
+        <div class="brand">
+          <div class="brand-name">Tekno Kreasi</div>
+          <div class="brand-tagline">Digital Product Studio</div>
+        </div>
+      </div>
+      
+      <h1 class="main-title">
+        Jasa Website, Aplikasi &<br>
+        <span class="highlight">Sistem Digital untuk UMKM</span>
+      </h1>
+      
+      <p class="description">
+        Website profesional, katalog online, aplikasi operasional, POS, ecommerce, dashboard, dan sistem internal yang rapi, mudah dipakai, dan siap dipromosikan.
+      </p>
+    </div>
+    
+    <div class="footer">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">20+</div>
+          <div class="stat-label">Client & Project</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">7-14</div>
+          <div class="stat-label">Hari Kerja</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">Cirebon</div>
+          <div class="stat-label">Jawa Barat</div>
+        </div>
+      </div>
+      
+      <div class="website">teknokreasi.com</div>
+    </div>
+  </div>
+</body>
+</html>

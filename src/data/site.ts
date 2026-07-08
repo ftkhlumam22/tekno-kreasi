@@ -1,5 +1,7 @@
 export const siteUrl = "https://teknokreasi.com";
 
+export const ogImage = "/og-image.png";
+
 export const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=6285157215288&text=Halo%20Tekno%20Kreasi%2C%20saya%20ingin%20konsultasi%20website%20atau%20digitalisasi%20bisnis";
 
