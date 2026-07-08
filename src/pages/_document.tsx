@@ -6,6 +6,8 @@ export default function Document() {
       <Head>
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="rdgqV0wSDgZw5XJAzxKX4JrL7UImxs5BtA9qWpuD3gU" />
+        <link rel="preconnect" href="https://api.whatsapp.com" />
+        <link rel="dns-prefetch" href="https://api.whatsapp.com" />
       </Head>
       <body>
         <Main />

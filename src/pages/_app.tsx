@@ -1,10 +1,16 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Poppins } from "next/font/google";
 import { useEffect } from "react";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
 export default function App({ Component, pageProps }: AppProps) {
-  // Menangani ukuran viewport untuk perangkat mobile
   useEffect(() => {
     const setVH = () => {
       const vh = window.innerHeight * 0.01;
@@ -18,8 +24,10 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <LanguageProvider>
-      <Component {...pageProps} />
-    </LanguageProvider>
+    <div className={poppins.className}>
+      <LanguageProvider>
+        <Component {...pageProps} />
+      </LanguageProvider>
+    </div>
   );
 }

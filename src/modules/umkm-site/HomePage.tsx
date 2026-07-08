@@ -139,6 +139,7 @@ const HomePage = () => {
                   fill
                   sizes="(max-width: 1024px) 100vw, 54vw"
                   className="object-contain p-3 md:p-5"
+                  priority
                 />
               </div>
             </div>
