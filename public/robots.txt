@@ -1,4 +1,15 @@
+# robots.txt for Tekno Kreasi
+# https://teknokreasi.com
+
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://teknokreasi.com/sitemap.xml
+
+# Crawl-delay (optional, untuk mengurangi beban server)
+Crawl-delay: 1
+
+# Disallow admin panel dari crawling
+Disallow: /admin/
+Disallow: /api/

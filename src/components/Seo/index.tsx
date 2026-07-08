@@ -82,6 +82,18 @@ const Seo = ({ title, description, path = "", image }: SeoProps) => {
     ],
   };
 
+  const webSiteJson = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Tekno Kreasi",
+    url: siteUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/blog?search={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <Head>
       <title>{title}</title>
@@ -120,6 +132,10 @@ const Seo = ({ title, description, path = "", image }: SeoProps) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJson) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJson) }}
       />
     </Head>
   );
